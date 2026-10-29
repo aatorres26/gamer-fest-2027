@@ -63,35 +63,35 @@ El sitio web está estructurado en una sola página con navegación fluida a tra
 * **Bootstrap 5.3:** Sistema de grillas (*Grid System*), componentes de interfaz (Cards, Buttons, Forms, Navbar) y utilidades de diseño con soporte nativo para tema oscuro (`data-bs-theme="dark"`).
 * **CSS3:** Archivo externo (`css/estilos.css`) para personalizaciones adicionales.
 * **Accesibilidad (a11y):** Uso de atributos `aria-label`, textos alternativos detallados (`alt`) en imágenes y asociación correcta de etiquetas `<label>` en formularios.
- <div class="container">
+<div class="container">
         <h2 class="display-5 fw-bold text-uppercase mb-2">
           <span class="text-danger">Únete</span><br>al torneo
         </h2>
 
-        <form id="formInscripcion" class="bg-dark border border-secondary rounded-4 p-3">
+        <form id="formInscripcion" class="bg-dark border border-secondary rounded-4 p-3 p-lg-4">
           <div class="row g-3">
 
-            <div class="col-12">
+            <div class="col-12 col-lg-6">
               <label for="nombres" class="form-label">Nombres y apellidos <span class="text-danger">*</span></label>
               <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Ej.: Ana Torres" required>
             </div>
 
-            <div class="col-12">
+            <div class="col-12 col-lg-6">
               <label for="correo" class="form-label">Correo institucional</label>
               <input type="email" class="form-control" id="correo" name="correo" placeholder="usuario@espe.edu.ec">
             </div>
 
-            <div class="col-12">
+            <div class="col-12 col-lg-6">
               <label for="telefono" class="form-label">Teléfono celular</label>
               <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="09XXXXXXXX" inputmode="numeric" maxlength="10">
             </div>
 
-            <div class="col-12">
+            <div class="col-12 col-lg-6">
               <label for="nickname" class="form-label">Nickname de jugador</label>
               <input type="text" class="form-control" id="nickname" name="nickname" placeholder="Ej.: ShadowFox27">
             </div>
 
-            <div class="col-12">
+            <div class="col-12 col-lg-6">
               <label for="categoria" class="form-label">Categoría <span class="text-danger">*</span></label>
               <select class="form-select" id="categoria" name="categoria" required>
                 <option value="" selected disabled>Selecciona una categoría</option>
@@ -102,7 +102,7 @@ El sitio web está estructurado en una sola página con navegación fluida a tra
               </select>
             </div>
 
-            <div class="col-12">
+            <div class="col-12 col-lg-6 d-flex align-items-lg-end">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="terminos" name="terminos">
                 <label class="form-check-label" for="terminos">
@@ -111,8 +111,8 @@ El sitio web está estructurado en una sola página con navegación fluida a tra
               </div>
             </div>
 
-            <div class="col-12">
-              <button type="submit" class="btn btn-success text-dark btn-lg w-100 fw-bold text-uppercase">Enviar inscripción</button>
+            <div class="col-12 d-grid d-lg-flex justify-content-lg-end">
+              <button type="submit" class="btn btn-success text-dark btn-lg px-lg-5 fw-bold text-uppercase">Enviar inscripción</button>
             </div>
           </div>
         </form>
